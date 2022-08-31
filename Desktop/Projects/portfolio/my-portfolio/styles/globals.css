@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0e1630] tracking-wide;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-[#fff] font-bold tracking-wide;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  p {
+    @apply tracking-wide text-gray-300;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  button {
+    @apply shadow-xl shadow-[#01d293] rounded-xl uppercase bg-gradient-to-r from-[#01d293] to-[#65a28f] text-[#fff];
+  }
+}
